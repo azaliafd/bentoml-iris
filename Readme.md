@@ -51,7 +51,7 @@ Melatih model dan menyimpannya ke BentoML store
 Menguji prediksi model
 Menjalankan API server di port 3000
 
-## 2. Latih & Tes Model Secara Manual
+### 2. Latih & Tes Model Secara Manual
 Jika ingin menjalankan manual tanpa script:
 ```bash
 python3 -m venv venv
@@ -62,7 +62,7 @@ python3 train.py
 python3 test.py
 ```
 
-## 3. Jalankan REST API BentoML
+### 3. Jalankan REST API BentoML
 Aktifkan environment dulu:
 ```bash
 source venv/bin/activate
@@ -79,7 +79,7 @@ Jika port 3000 sudah digunakan:
 ```bash
 bentoml serve service:svc --port 3001
 ```
-### Contoh Request API
+#### Contoh Request API
 Gunakan curl untuk melakukan prediksi:
 ``` bash
 curl -X POST \
