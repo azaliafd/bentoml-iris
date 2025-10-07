@@ -1,0 +1,10 @@
+service: "service.py:svc"
+labels:
+  author: kelompok4
+  project: bentoml-iris
+include:
+  - "*.py"
+python:
+  packages:
+    - scikit-learn
+    - pandas
